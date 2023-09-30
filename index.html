@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Page to Learn How To Use Twilio SMS API</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body style="display: contents">
+    <nav class="navbar">
+      <header class="navbar_header">
+        <a href="index.html"
+          >Eazi <span class="navbar_header-text">SMS</span></a
+        >
+      </header>
+      <ul class="navbar_links hidden" id="navlinks">
+        <li class="navlink"><a href="#hero">Home</a></li>
+        <li class="navlink"><a href="#about">About</a></li>
+        <li class="navlink"><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- HamBurger Menu -->
+      <div class="menu" id="menu">
+        <i class="bx bx-menu-alt-right bx-md"></i>
+      </div>
+    </nav>
+    <!-- Hero Banner Section -->
+    <section class="hero_section" id="hero">
+      <div class="hero_section-text">
+        <h1 class="hero-header">Eazi SMS Messanger</h1>
+        <p class="hero-text">
+          Welcome to the Simple SMS Messenger. a platform for sending fast,
+          secure, and reliable messages to more than one contact.
+        </p>
+        <p class="hero-text">
+          Whether you need to reach out to a group of friends, colleagues, or
+          clients, our platform ensures a seamless and efficient messaging
+          experience.
+        </p>
+        <a href="#sms-form" id="send-sms">Send SMS</a>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/alert.png" alt="landing-page-img" />
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about_section" id="about">
+      <h2 class="about-header">Key Features</h2>
+      <div class="about_section-box">
+        <div class="about-img">
+          <img src="./assets/about1.png" alt="" />
+        </div>
+        <div class="about_section-wrap">
+          <div class="about-text-wrap">
+            <p class="about-text">
+              <span>Speed:</span> Send your messages in a flash. We prioritize
+              speed to ensure that your messages are delivered promptly,
+              allowing you to stay connected without delays.
+            </p>
+            <i class="bx bx-run bx-md bx-border"></i>
+          </div>
+          <div class="about-text-wrap">
+            <p class="about-text">
+              <span>Security:</span> Your privacy matters. Our platform employs
+              robust security measures to safeguard your messages, providing you
+              with the confidence that your communication remains private and
+              secure.
+            </p>
+            <i class="bx bxs-shield-plus bx-md bx-border"></i>
+          </div>
+          <div class="about-text-wrap">
+            <p class="about-text">
+              <span>Reliable:</span> Count on us for reliable message delivery.
+              We understand the importance of your messages, and our system is
+              designed to ensure that they reach their destinations
+              consistently.
+            </p>
+            <i class="bx bx-bar-chart bx-md bx-border"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact_section" id="contact">
+      <h2 class="contact-header">Contact Us</h2>
+      <form class="contact-form">
+        <input class="form-input" type="text" placeholder="Company Name" />
+        <input class="form-input" type="email" placeholder="Your Email" />
+        <textarea
+          name="message"
+          id="contact-message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <button>Contact Me</button>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">&copy; 2023 Eazi SMS. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#" target="_blank"
+          ><i class="bx bxl-linkedin bx-md bx-border"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="bx bxl-instagram bx-md bx-border"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="bx bxl-twitter bx-md bx-border"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="bx bxl-github bx-md bx-border"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- Script Files Here -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
