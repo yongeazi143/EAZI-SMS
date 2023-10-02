@@ -61,7 +61,7 @@ const sendFormData = async (form) => {
       recipients: recipient.join(","),
     };
 
-    const response = await fetch("../../functions/send-messages", {
+    const response = await fetch("send-messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
