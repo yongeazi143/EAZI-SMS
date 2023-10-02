@@ -1,0 +1,229 @@
+body {
+  background: #f4b619;
+}
+
+.form_section {
+  position: relative;
+  top: 5rem;
+  padding: 1.5rem;
+  /* font-family: "Unica One", cursive; */
+  /* font-family: "Fira Sans", sans-serif; */
+}
+
+.form_section-mg img {
+  width: 100%;
+}
+
+.form_section > .form_section-header-text {
+  text-align: center;
+  font-family: "Unica One", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.form_section > .form_section-header-text span {
+  color: #fa6500;
+}
+.form_container .form_section-header-text {
+  text-align: center;
+  font-family: "Unica One", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1em;
+  visibility: hidden;
+}
+
+.form_container .form_section-header-text span {
+  color: #fa6500;
+}
+
+.recipient_container {
+  margin-bottom: 2rem;
+}
+
+.form-text h2 {
+  font-family: "Unica One", cursive;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.recipient_container .form-text p {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  font-family: "Fira Sans", sans-serif;
+}
+.recipient_container .form-text p em a {
+  color: #fa6500;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.recipient_container .form-text p em a:hover {
+  text-decoration: underline;
+}
+
+.recipient_container .add_recepient {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  justify-content: ;
+}
+
+label {
+  font-family: "Unica One", cursive;
+  padding: 5px;
+  color: #fa6500;
+  font-weight: 700;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 2px;
+  outline: none;
+  border: 0;
+}
+input:focus,
+input:focus-within,
+input:focus-visible {
+  border: 2px solid #e45d04;
+  transition: 0.5s;
+}
+
+button {
+  justify-self: end;
+  text-decoration: none;
+  background-color: #fa6500;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  align-self: flex-end;
+  width: 150px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+button:hover {
+  background-color: #e45d04;
+}
+
+.recipient-lists {
+  list-style: none;
+  display: grid;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+.recipient-lists li {
+  width: fit-content;
+  padding: 8px;
+  letter-spacing: 2px;
+  font-family: "Unica One", cursive;
+  color: #fff;
+  background: #fa6500;
+  border-radius: 5px;
+  margin: 4px;
+  text-align: center;
+}
+
+/* Send Form */
+.send_message_container .send_message .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  margin-bottom: 0.5rem;
+}
+
+.form-button-text {
+  float: right;
+}
+
+footer {
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 767px) {
+  .form_section {
+    top: 7rem;
+  }
+  .form_section .form_section-header-text {
+    font-size: 3rem;
+  }
+  .form_container {
+    width: 500px;
+    margin: auto;
+  }
+  .recipient-lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recipient_container .form-text p {
+    font-size: 20px;
+  }
+  button {
+    width: 150px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+  }
+  label {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  input,
+  textarea {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form_section {
+    top: 10rem;
+  }
+  .form_section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .form_section > .form_section-header-text {
+    display: none;
+  }
+  .form_container .form_section-header-text {
+    visibility: visible;
+  }
+  .form_section-mg {
+    margin: auto;
+  }
+  .form_container {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+  .recipient_container .form-text p {
+    max-width: 600px;
+    padding-right: 2.5rem;
+  }
+}

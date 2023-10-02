@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sens SMS Message</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+      integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+      integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <header class="navbar_header">
+        <a href="index.html"
+          >Eazi <span class="navbar_header-text">SMS</span></a
+        >
+      </header>
+      <ul class="navbar_links hidden" id="navlinks">
+        <li class="navlink"><a href="index.html#hero">Home</a></li>
+        <li class="navlink"><a href="index.html#about">About</a></li>
+        <li class="navlink"><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <!-- HamBurger Menu -->
+      <div class="menu" id="menu">
+        <i class="bx bx-menu-alt-right bx-md"></i>
+      </div>
+    </nav>
+    <section class="form_section">
+      <h1 class="form_section-header-text">
+        Fill Form To <span>Send SMS</span>
+      </h1>
+      <div class="form_section-mg">
+        <img src="./images/about2.png" alt="form image" />
+      </div>
+      <div class="form_container">
+        <h1 class="form_section-header-text">
+          Fill Form To <span>Send SMS</span>
+        </h1>
+        <div class="recipient_container">
+          <div class="form-text">
+            <h2>Add Recipients</h2>
+            <p>
+              Enter one or more phone numbers to send your messages. All numbers
+              have to be in the
+              <em>
+                <a
+                  href="https://www.twilio.com/docs/glossary/what-e164"
+                  target="_blank"
+                  >E.164 format.</a
+                >
+              </em>
+            </p>
+          </div>
+          <form class="add_recepient" id="addRecipient">
+            <label for="add-recepient">Add Recipients:</label>
+            <input
+              type="tel"
+              class="form-input-text"
+              id="recepientInput"
+              placeholder="Enter phone number"
+            />
+            <button class="form-button-text">Add</button>
+          </form>
+          <ul class="recipient-lists" id="recipientLists"></ul>
+        </div>
+        <div class="send_message_container">
+          <div class="form-text">
+            <h2>Send Message</h2>
+          </div>
+          <form class="send_message" id="sendMessage">
+            <div class="form-group">
+              <label for="send-message">Passcode:</label>
+              <input
+                type="text"
+                class="passcode"
+                id="passcode"
+                placeholder="Enter passcode"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button class="form-button-text" id="send-message-button">
+              Send
+            </button>
+          </form>
+          <div class="status" id="resultStatus"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">&copy; 2023 Eazi SMS. All Rights Reserved.</p>
+      <div class="socials">
+        <a href="#" target="_blank"
+          ><i class="bx bxl-linkedin bx-md bx-border"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="bx bxl-instagram bx-md bx-border"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="bx bxl-twitter bx-md bx-border"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="bx bxl-github bx-md bx-border"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./js/navbar.js"></script>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
