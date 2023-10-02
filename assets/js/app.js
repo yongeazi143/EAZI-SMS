@@ -5,7 +5,7 @@ const recepientList = document.getElementById("recipientLists");
 const passcodeInput = sendMessages.querySelector("#passcode");
 const messageTextarea = sendMessages.querySelector("#message");
 const sendButton = sendMessages.querySelector("#send-message-button");
-
+// import f from '../../functions/send-messages'
 const recipient = [];
 
 const addRecipientToList = (phoneNumber) => {
@@ -61,7 +61,7 @@ const sendFormData = async (form) => {
       recipients: recipient.join(","),
     };
 
-    const response = await fetch("send-messages", {
+    const response = await fetch("../../functions/send-messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
